@@ -12,4 +12,4 @@ def home_page():
 @app.route("/story")
 def story_page():
     """Shows story page."""
-    return render_template("story.html", story.generate(request.args))
+    return render_template("story.html", text=story.generate(request.args))

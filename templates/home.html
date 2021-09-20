@@ -10,7 +10,7 @@
     <h1>Madlibs</h1>
     <form action="/story">
         {% for prompt in prompts %}
-            <p>{{ prompt }}:
+            <p>{{ prompt.replace("_", " ").title() }}:
             <input name="{{ prompt }}">
             </p>
         {% endfor %}
